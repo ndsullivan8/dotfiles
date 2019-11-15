@@ -2,7 +2,6 @@
 TO INSTALL
 ```
 git clone https://github.com/ndsullivan8/dotfiles.git
-
 ```
 ## Vim SETUP
 ```
@@ -25,4 +24,5 @@ git submodule update --init --recursive
 ## Final
 ```
 ln -fs ~/dotfiles/vim/vimrc ~/.vimrc
+ln -fs ~/dotfiles/tmux.conf ~/.tmux.conf
 ```
