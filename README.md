@@ -1,8 +1,9 @@
 # Dotfiles
 TO INSTALL
+```
+git clone https://github.com/ndsullivan8/dotfiles.git
 
-git clone ~~
-
+```
 VIM SETUP
 ```
 cd ~/dotfiles/vim/
