@@ -21,3 +21,8 @@ cd YouCompleteMe
 git submodule update --init --recursive
 ./install.py --clang-completer --go-completer
 ```
+
+## Final
+```
+ln -fs ~/dotfiles/vim/vimrc ~/.vimrc
+```
