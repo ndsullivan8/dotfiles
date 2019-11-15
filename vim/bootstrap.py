@@ -76,8 +76,7 @@ def download_extract_replace(plugin_name, zip_path, temp_dir, bundle_dir):
     zip_f = zipfile.ZipFile(temp_zip_path)
     zip_f.extractall(temp_dir)
 
-    plugin_temp_path = path.join(temp_dir,
-                                 path.join(temp_dir, '%s-master' % plugin_name))
+    plugin_temp_path = path.join(temp_dir, path.join(temp_dir, '%s-master' % plugin_name))
 
     # Remove the current plugin and replace it with the extracted
     plugin_dest_path = path.join(bundle_dir, plugin_name)
@@ -101,7 +100,8 @@ def update(plugin):
 def check_setup():
     if not path.exists(PATHOGEN_DIR):
         mkdir(PATHOGEN_DIR)
-        subprocess.run(["curl","-LSso",path.join(PATHOGEN_DIR,"pathogen.vim"),"https://tpo.pe/pathogen.vim"])
+        subprocess.run(["curl", "-LSso", path.join(PATHOGEN_DIR,
+                        "pathogen.vim"), "https://tpo.pe/pathogen.vim"])
     if not path.exists(BUNDLE_DIR):
         mkdir(BUNDLE_DIR)
 
