@@ -3,6 +3,13 @@ TO INSTALL
 ```
 git clone https://github.com/ndsullivan8/dotfiles.git
 ```
+
+## Oh-My-Zsh
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
 ## Vim SETUP
 ```
 cd ~/dotfiles/vim/
@@ -23,6 +30,9 @@ git submodule update --init --recursive
 
 ## Final
 ```
+rm -f ~/.zshrc
+ln -fs ~/dotfiles/zshrc ~/.zshrc
+ln -fs ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -fs ~/dotfiles/vim/vimrc ~/.vimrc
 ln -fs ~/dotfiles/tmux.conf ~/.tmux.conf
 ```
