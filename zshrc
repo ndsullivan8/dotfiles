@@ -100,6 +100,6 @@ source $ZSH/oh-my-zsh.sh
 DEFAULT_USER=$(whoami)
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+      prompt_segment black default "%(!.%{%F{yellow}%}.)$(hostname -s)"
   fi
 }
