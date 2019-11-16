@@ -2,7 +2,11 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/nsully/.oh-my-zsh"
+if [ "$(uname 2> /dev/null)" != "Linux" ]; then
+    export ZSH="/Users/nsully/.oh-my-zsh"
+else
+    export ZSH="/home/nsully/.oh-my-zsh"
+fi
  
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -99,7 +103,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 DEFAULT_USER=$(whoami)
 prompt_context() {
-  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
       prompt_segment black default "%(!.%{%F{yellow}%}.)$(hostname -s)"
-  fi
 }
