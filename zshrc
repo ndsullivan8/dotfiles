@@ -3,9 +3,9 @@
 
 # Path to your oh-my-zsh installation.
 if [ "$(uname 2> /dev/null)" != "Linux" ]; then
-    export ZSH="/Users/nsully/.oh-my-zsh"
+    export ZSH="/Users/$USER/.oh-my-zsh"
 else
-    export ZSH="/home/nsully/.oh-my-zsh"
+    export ZSH="/home/$USER/.oh-my-zsh"
 fi
  
 # Set name of the theme to load --- if set to "random", it will
