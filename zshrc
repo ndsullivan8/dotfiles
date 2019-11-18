@@ -76,6 +76,8 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+functions[prompt_hg]="" 
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
