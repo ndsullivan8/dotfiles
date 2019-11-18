@@ -102,6 +102,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 DEFAULT_USER=$(whoami)
+HOST=$(hostname -s)
 prompt_context() {
-      prompt_segment black default "%(!.%{%F{yellow}%}.)$(hostname -s)"
+    prompt_segment black default "%(!.%{%F{yellow}%}.)${HOST}"
 }
+if [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_CONNECTION" ]]; then
+    tmux attach-session -t dev || tmux new-session -s dev
+fi
