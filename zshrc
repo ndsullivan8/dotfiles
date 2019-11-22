@@ -111,3 +111,7 @@ prompt_context() {
 if [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_CONNECTION" ]]; then
     tmux attach-session -t dev || tmux new-session -s dev
 fi
+
+if [[ -a ~/.fun_helper  ]]; then
+    source ~/.fun_helper
+fi
