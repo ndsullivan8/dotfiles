@@ -22,7 +22,6 @@ ln -fs ~/dotfiles/vim/vimrc ~/.vimrc
 ```
 cd ~/dotfiles/vim/bundle
 git clone https://github.com/ycm-core/YouCompleteMe.git
-git submodule update --init --recursive
 cd YouCompleteMe
 git submodule update --init --recursive
 ./install.py --clang-completer --go-completer
@@ -34,5 +33,4 @@ rm -f ~/.zshrc
 ln -fs ~/dotfiles/zshrc ~/.zshrc
 ln -fs ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -fs ~/dotfiles/vim/vimrc ~/.vimrc
-ln -fs ~/dotfiles/tmux.conf ~/.tmux.conf
 ```
