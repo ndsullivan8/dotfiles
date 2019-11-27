@@ -26,6 +26,8 @@ au FileType python set indentkeys-=0#
 " => CConf File
 """""""""""""""""""""""""""""""
 au BufRead,BufNewFile *.cconf set filetype=python
+au BufRead,BufNewFile *.cinc set filetype=python
+au BufRead,BufNewFile *.tw set filetype=python
 
 """"""""""""""""""""""""""""""
 " => JavaScript section
