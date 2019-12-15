@@ -115,3 +115,5 @@ fi
 if [[ -a ~/vm_funcs.zsh  ]]; then
     source ~/vm_funcs.zsh
 fi
+
+export EDITOR=vim
