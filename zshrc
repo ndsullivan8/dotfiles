@@ -117,3 +117,8 @@ if [[ -a ~/vm_funcs.zsh  ]]; then
 fi
 
 export EDITOR=vim
+
+export GOPATH="/data/users/nsully/gopaths/gobuck:/data/users/nsully/gopaths/godeps:/data/users/nsully/gopaths/gofbcode"
+export GOROOT="/data/users/nsully/gopaths/goroot"
+export PATH="/data/users/nsully/gopaths/go-tools/bin:$PATH"
+export PATH="/data/users/nsully/gopaths/goroot/bin:$PATH"
