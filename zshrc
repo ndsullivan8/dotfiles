@@ -114,6 +114,11 @@ fi
 
 if [[ -a ~/vm_funcs.zsh  ]]; then
     source ~/vm_funcs.zsh
+    source ~/vm_jobs.zsh
+fi
+
+if [[ -a ~/ng_funcs.zsh  ]]; then
+    source ~/ng_funcs.zsh
 fi
 
 export EDITOR=vim
