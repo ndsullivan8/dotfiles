@@ -152,6 +152,8 @@ let g:ale_linters = {
 \}
 
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
+" Call flake8 on save
+autocmd BufWritePost *.py call Flake8()
 
 " Disabling highlighting
 let g:ale_set_highlights = 0
