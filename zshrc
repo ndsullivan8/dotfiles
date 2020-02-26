@@ -128,3 +128,6 @@ if [[ -a /data/users/nsully/gopaths/gobuck ]]; then
     export PATH="/data/users/nsully/gopaths/go-tools/bin:$PATH"
     export PATH="/data/users/nsully/gopaths/goroot/bin:$PATH"
 fi
+if [[ -a /usr/facebook/ops/rc/master.zshrc ]]; then
+    source /usr/facebook/ops/rc/master.zshrc
+fi
