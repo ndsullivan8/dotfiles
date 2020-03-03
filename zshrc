@@ -129,4 +129,4 @@ if [[ -a /data/users/nsully/gopaths/gobuck ]]; then
     export PATH="/data/users/nsully/gopaths/goroot/bin:$PATH"
 fi
 
-alias et_dev = et $USER@$USER.sb.facebook.com:8080
+alias et_dev="et $USER@$USER.sb.facebook.com:8080"
