@@ -129,6 +129,4 @@ if [[ -a /data/users/nsully/gopaths/gobuck ]]; then
     export PATH="/data/users/nsully/gopaths/goroot/bin:$PATH"
 fi
 
-if $HOST == "nsully-mbp"; then
-    alias et_dev = et $USER@$USER.sb.facebook.com:8080
-fi
+alias et_dev = et $USER@$USER.sb.facebook.com:8080
