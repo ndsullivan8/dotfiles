@@ -10,15 +10,28 @@ git clone https://github.com/ndsullivan8/dotfiles.git
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-## Vim SETUP
+## HomeBrew
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)
+```
+
+## Mac OS
+```
+brew install python
+brew install vim
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+```
+
+## Vim Pkgs
 ```
 cd ~/dotfiles/vim/
-python bootstrap.py
+pip3 install --user requests
+python3 bootstrap.py
 cd ~
 ln -fs ~/dotfiles/vim/vimrc ~/.vimrc
 ```
 
-## YouCompleteMe SETUP
+## YouCompleteMe
 ```
 cd ~/dotfiles/vim/bundle
 git clone https://github.com/ycm-core/YouCompleteMe.git
